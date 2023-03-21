@@ -3,15 +3,16 @@
 
 Containerized architecture with PostgreSQL as the database, Gunicorn as the application server, and Caddy (reverse-proxy) for SSL management.
 
-##In development:
+## In development:
 
 Use python manage.py runserver to start the server.
 An SQLite database will be used during development.
 
-##In production:
+## In production:
 
 Turn on PRODUCTION=True in settings.py and replace all this value by yours :
 settings.py :
+```sh
 your_domain.com
 YOUR_DB_NAME
 YOUR_USER
@@ -19,6 +20,7 @@ YOUR_PASSWORD
 YOUR_SMTP_HOSTING_PROVIDER
 YOUR_EMAIL_FOR_SMTP
 YOUR_EMAIL_PASSWORD
+```
 
 docker-compose.yml
 YOUR_USER
