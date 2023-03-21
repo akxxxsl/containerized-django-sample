@@ -47,3 +47,5 @@ First start of the production environment: ./manage first_start
 - And to apply migrations: ./manage migrate
 - To create a superuser: ./manage createsuperuser
 - Other commands are available using the command ./manage help.
+
+> :warning: **Important:** It is crucial to have a domain pointing to your server's IP address, as well as the 'www' subdomain.
