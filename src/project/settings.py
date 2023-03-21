@@ -4,7 +4,6 @@ from pathlib import Path
 PRODUCTION = False
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = 'django-insecure-!@cg(frjjofq3kit(!a)bnahj!!@1na1zm29q@fe6s#jb)qf(2'
 
 if PRODUCTION:
     DEBUG = False
