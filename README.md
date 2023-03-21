@@ -3,12 +3,12 @@
 
 Containerized architecture with PostgreSQL as the database, Gunicorn as the application server, and Caddy (reverse-proxy) for SSL management.
 
-###In development:
+##In development:
 
 Use python manage.py runserver to start the server.
 An SQLite database will be used during development.
 
-###In production:
+##In production:
 
 Turn on PRODUCTION=True in settings.py and replace all this value by yours :
 settings.py :
