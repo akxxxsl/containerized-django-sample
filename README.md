@@ -16,10 +16,18 @@ your_domain.com
 YOUR_DB_NAME
 YOUR_USER
 YOUR_PASSWORD
-
 YOUR_SMTP_HOSTING_PROVIDER
 YOUR_EMAIL_FOR_SMTP
 YOUR_EMAIL_PASSWORD
+
+docker-compose.yml
+YOUR_USER
+YOUR_PASSWORD
+YOUR_DB_NAME
+
+Caddyfile :
+your_domain.com
+www.your_domain.com
 
 Use the script ./manage [commands].
 Allow script execution with chmod +x manage.sh.
