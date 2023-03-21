@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - static-data:/app/static
+    environment:
+      - DEBUG=False
+      - DATABASE_URL=postgres://YOUR_USER:YOUR_PASSWORD@db:5432/YOUR_DB_NAME
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=YOUR_USER
+      - POSTGRES_PASSWORD=YOUR_PASSWORD
+      - POSTGRES_DB=YOUR_DB_NAME
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  caddy:
+    image: caddy:2.4.6-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy-data:/data/caddy
+      - static-data:/app/static
+
+volumes:
+  caddy-data:
+  static-data:
+  db-data:
