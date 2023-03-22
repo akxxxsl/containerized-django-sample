@@ -49,3 +49,8 @@ Allow script execution with chmod +x manage.sh.
 - 🔍 And to apply migrations: ./manage migrate
 - 👑 To create a superuser: ./manage createsuperuser
 - ℹ️ Other commands are available using the command ./manage help.
+
+
+### ✅ After a successful installation, you will be able to see this page:
+
+![Sucessful installation page](successfully_installed.jpg)
