@@ -10,7 +10,10 @@ An SQLite database will be used during development.
 
 ### 🏢 In production:
 
-> ⚠️ **Important:** It is crucial to have a domain pointing to your server's IP address, as well as the 'www' subdomain and change the SECRET_KEY in settings.py
+> ⚠️ **Important:** 
+- It is recommended to use Debian 11 and the root user.
+- Ensure that you have a domain pointing to your server's IP address, including the 'www' subdomain.
+- Remember to change the SECRET_KEY in settings.py.
 
 Turn on PRODUCTION=True in settings.py and replace all this value by yours :
 settings.py :
