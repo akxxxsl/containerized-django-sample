@@ -53,4 +53,4 @@ Allow script execution with chmod +x manage.sh.
 
 ### ✅ After a successful installation, you will be able to see this page:
 
-![Sucessful installation page](successfully_installed.jpg)
+![Sucessful installation page](successfull_installed.jpg)
