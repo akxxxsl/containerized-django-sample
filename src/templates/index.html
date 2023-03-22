@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Django Sample</title>
-</head>
-<body>
-<h1>By @akxxxsl : https://github.com/akxxxsl</h1>
-<h1>🐳 Containerized Django Sample (PostgreSQL, Gunicorn, Caddy) 🐳</h1>
+{% extends "base.html" %}
+{% block title %}
+Django Sample by @akxxxsl
+{% endblock %}
 
-</body>
-</html>
+{% block main %}
+
+<h1>✅ Successfully installed!</h1>
+<div class="box">
+    <h1>By @akxxxsl : <a href="https://github.com/akxxxsl" target="_blank">https://github.com/akxxxsl</a></h1>
+    <h2>🐳 Containerized Django Sample (PostgreSQL, Gunicorn, Caddy) 🐳</h2>
+    <h3>🚀 Ready for production and development (using docker-compose) 🚀</h3>
+</div>
+{% endblock %}
