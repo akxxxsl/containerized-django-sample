@@ -10,7 +10,7 @@ An SQLite database will be used during development.
 
 ### 🏢 In production:
 
-> ⚠️ **Important:** It is crucial to have a domain pointing to your server's IP address, as well as the 'www' subdomain. 
+> ⚠️ **Important:** It is crucial to have a domain pointing to your server's IP address, as well as the 'www' subdomain and change the SECRET_KEY in settings.py
 
 Turn on PRODUCTION=True in settings.py and replace all this value by yours :
 settings.py :
