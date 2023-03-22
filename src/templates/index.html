@@ -5,10 +5,13 @@ Django Sample by @akxxxsl
 
 {% block main %}
 
-<h1>✅ Successfully installed!</h1>
+<h1 class="color-white">✅ Successfully installed!</h1>
 <div class="box">
     <h1>By @akxxxsl : <a href="https://github.com/akxxxsl" target="_blank">https://github.com/akxxxsl</a></h1>
     <h2>🐳 Containerized Django Sample (PostgreSQL, Gunicorn, Caddy) 🐳</h2>
     <h3>🚀 Ready for production and development (using docker-compose) 🚀</h3>
+    <div class="second-box">
+        <h3>{% if production %}🏢{% else %}🛠️{% endif %}  PRODUCTION = {{ production }}</h3>
+    </div>
 </div>
 {% endblock %}

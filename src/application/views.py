@@ -1,6 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.conf import settings
 
 def index(request):
-    return render(request, template_name="index.html")
+    production = settings.PRODUCTION
+
+    return render(request, template_name="index.html", context={'production': production})

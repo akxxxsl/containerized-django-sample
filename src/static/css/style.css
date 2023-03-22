@@ -19,6 +19,18 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 border-radius: 10px;
+border-solid: 1px white;
+}
+
+.second-box{
+background-color: #00337C;
+color: white;
+border-radius: 5px;
+padding: 0px 20px;
+}
+
+.color-white{
+color: white;
 }
 
 a{
