@@ -3,6 +3,9 @@ from pathlib import Path
 
 PRODUCTION = False
 
+# WARNING CHANGE SECRET KEY IN PRODUCTION
+SECRET_KEY = 'VSL6cS8cvvmKoron7CZ76HMzjsVgMY'
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 if PRODUCTION:
